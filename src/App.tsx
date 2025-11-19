@@ -149,10 +149,8 @@ function App() {
   return (
     <>
             <div className="prompt-card">
-              <p className="prompt-title">{pack.promptTitle}</p>
               <h1>{prompt}</h1>
-      </div>
-            <p className="subline">{pack.subline}</p>
+            </div>
             <div className="buttons-area">
               <button
                 className="yes-button"
@@ -211,8 +209,6 @@ function App() {
 type LanguagePack = {
   label: string;
   promptTemplate: string;
-  promptTitle: string;
-  subline: string;
   yesLabel: string;
   noLabel: string;
   footer: string;
@@ -224,8 +220,6 @@ const languagePacks: Record<LanguageCode, LanguagePack> = {
   tr: {
     label: 'Türkçe',
     promptTemplate: 'Beni affeder misin {name}?',
-    promptTitle: 'Ona söylemek istediğin şey',
-    subline: 'Evet büyür, Hayır kaçar. Kaderin bu 😅',
     yesLabel: 'Evet 😍',
     noLabel: 'Hayır 🙈',
     footer: 'Link 12 saat sonra kaybolur. Çabuk cevapla!',
@@ -235,8 +229,6 @@ const languagePacks: Record<LanguageCode, LanguagePack> = {
   en: {
     label: 'English',
     promptTemplate: 'Will you forgive me, {name}?',
-    promptTitle: 'What you want them to see',
-    subline: 'Yes button grows. No button flees. Choose wisely 😅',
     yesLabel: 'Yes 😍',
     noLabel: 'No 🙈',
     footer: 'Link vanishes in 12 hours. Decide fast!',
@@ -246,8 +238,6 @@ const languagePacks: Record<LanguageCode, LanguagePack> = {
   es: {
     label: 'Español',
     promptTemplate: '¿Me perdonas, {name}?',
-    promptTitle: 'Lo que quieres que vea',
-    subline: 'El sí crece, el no huye. Está escrito 😅',
     yesLabel: 'Sí 😍',
     noLabel: 'No 🙈',
     footer: 'El enlace desaparece en 12 horas. ¡Corre!',
@@ -257,8 +247,6 @@ const languagePacks: Record<LanguageCode, LanguagePack> = {
   fr: {
     label: 'Français',
     promptTemplate: 'Tu me pardonnes, {name} ?',
-    promptTitle: 'Ce que tu veux lui dire',
-    subline: 'Oui grossit, Non s’enfuit. Destin scellé 😅',
     yesLabel: 'Oui 😍',
     noLabel: 'Non 🙈',
     footer: 'Lien valable 12h seulement. Réponds vite !',
@@ -268,8 +256,6 @@ const languagePacks: Record<LanguageCode, LanguagePack> = {
   ru: {
     label: 'Русский',
     promptTemplate: 'Простишь меня, {name}?',
-    promptTitle: 'Что ты хочешь сказать',
-    subline: '«Да» растёт, «Нет» убегает. Судьба 😅',
     yesLabel: 'Да 😍',
     noLabel: 'Нет 🙈',
     footer: 'Ссылка исчезнет через 12 часов. Поторопись!',

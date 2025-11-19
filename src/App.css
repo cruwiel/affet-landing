@@ -40,18 +40,6 @@ header {
   line-height: 1.2;
 }
 
-.prompt-title {
-  color: #8b90a4;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.85rem;
-}
-
-.subline {
-  margin: 0;
-  color: #696d7f;
-}
-
 .buttons-area {
   margin-top: 24px;
   position: relative;
